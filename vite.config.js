@@ -1,19 +1,21 @@
 import vue from '@vitejs/plugin-vue'
+import svgSprite from 'vite-plugin-svg-sprite'
 
-/**
- * https://vitejs.dev/config/
- * @type {import('vite').UserConfig}
- */
 export default {
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    svgSprite({
+      include: '**/icons/*.svg'
+    }),
+  ],
   alias: [
     { find: '@', replacement: '/src' }
   ],
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `$primary: orange; $secondary: red;`
+        additionalData: `$primary: #ed4844; $secondary: #5c4fc3; $border: 1px solid rgba($color: #000, $alpha: 0.05);`
       }
     }
-  }
+  },
 }

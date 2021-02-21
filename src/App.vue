@@ -1,18 +1,22 @@
 <template>
-  <SignIn></SignIn>
+  <router-view></router-view>
 </template>
 
-<script setup>
-import SignIn from '@/views/common/SignIn/index.vue'
-</script>
-
 <style>
+html, body {
+  height: 100%;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  height: 100%;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
 }
 </style>

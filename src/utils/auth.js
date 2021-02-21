@@ -5,11 +5,11 @@ const publicList = [
 ]
 
 export default {
-  checkToken (path) {
-    return storage.token
-      ? publicList.indexOf(path) < 0 ? true : { path: '/' }
-      :
-  },
+  // checkToken (path) {
+  //   return storage.token
+  //     ? publicList.indexOf(path) < 0 ? true : { path: '/' }
+  //     :
+  // },
   checkPermission () {
 
   },
