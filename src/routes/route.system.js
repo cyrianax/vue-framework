@@ -9,11 +9,11 @@ export default [
     component: '/system/User',
     meta: { title: '部门' }
   },
-  // {
-  //   path: '/system/role',
-  //   component: '/system/Role',
-  //   meta: { title: '部门' }
-  // },
+  {
+    path: '/system/role',
+    component: '/system/Role',
+    meta: { title: '部门' }
+  },
   // {
   //   path: '/system/menu',
   //   component: '/system/Menu',

@@ -19,7 +19,6 @@
 <script>
 import { ref, computed } from 'vue'
 // import { route } from 'vue-router'
-// import {  } from '@icon-park/vue-next'
 
 export default {
   setup () {

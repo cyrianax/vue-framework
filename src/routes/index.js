@@ -1,10 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 // import { getToken } from '@/utils/auth'
-import storage from '@/utils/storage'
-
-// import MainLayout from '@/layouts/Main'
-// import BlankLayout from '@/layouts/Blank'
+// import storage from '@/utils/storage'
 
 import SignIn from '@/views/common/SignIn/index.vue'
 // import _404 from '@/views/common/404'
@@ -27,6 +24,8 @@ const makeDynamicRoutes = configs => {
 const dynamicRoutes = makeDynamicRoutes([
   systemRoutes
 ])
+
+console.log(dynamicRoutes);
 
 // 静态路由
 const staticRoutes = [
